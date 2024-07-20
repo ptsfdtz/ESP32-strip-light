@@ -7,15 +7,15 @@
 const char* ssid = "302-2";// 连接WiFi
 const char* password = "ptsfdtz12138";
 
-#define LED_PIN 4        
-#define NUM_LEDS 14      
+#define LED_PIN 2        
+#define NUM_LEDS 36      
 #define BRIGHTNESS 200     
 #define LED_TYPE WS2812B  
 #define COLOR_ORDER GRB   
 
 CRGB leds[NUM_LEDS];
 
-WebServer server(8000);
+WebServer server(80);
 
 void setup() {
   Serial.begin(115200);
